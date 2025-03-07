@@ -1,0 +1,641 @@
+body {
+     color: #373636;
+     background: #ffffff;
+     font-family: 'Montserrat', sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ /* h1, h2, h3, h4, h5, h6 {
+     color: #ffffff;
+     margin: 10px 0;
+ } */
+ #Aboutcolor{
+    color: #ffffff;
+    
+ }
+ #Aboutcolor1{
+    color: #ffffff;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:50px;
+ }
+
+ a {
+     color: #2b2b2b;
+     transition: .3s;
+     text-decoration: none;
+ }
+
+
+ .Workservice{
+    background:linear-gradient(rgb(255, 104, 54),rgb(254, 193, 80) );
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding: 10px 10px;
+    padding-bottom: 100px;
+    border-radius: 10%;
+
+ }
+ 
+ .Workshop{
+    color: #fefefe;
+    
+ }
+ #H1workshop{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow:5px 5px 15px rgb(235, 133, 16) ;
+    font-size: 80px;
+}
+#H1workshop:hover{
+    text-shadow:7px 7px 17px rgb(235, 133, 16) ;
+    font-size: 81px;
+
+
+}
+.Wor{
+    color: #f9f8f8;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    
+}
+.Wor.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#headwor{
+    text-shadow:5px 5px 15px rgb(235, 133, 16) ;
+    margin-top: 50px;
+    
+}
+.workshop-item { 
+    display: inline-block;
+    align-items: right;
+    margin-top: 90px;
+   
+}
+
+.workshop-content {
+    padding: 10px 0px;
+}
+
+.Agilediv{
+    transform: translateX(80%);
+    width: 550px;
+    background: linear-gradient(rgba(193, 83, 9, 0.86),  rgba(121, 125, 15, 0.351)), url('imagesTrns/agile-workshop.png') center/cover no-repeat ;
+    padding: 70px 70px;
+    border-radius: 100px;
+}
+#Agileimg{
+    max-width: 350%;
+    transform: translateX(-20%);
+}
+.MLdiv{
+    width: 600px;
+    transform: translateX(-20%);
+    background: linear-gradient(to right, rgba(59, 174, 246, 0.849),  rgba(24, 24, 24, 0.542)), url('imagesTrns/0_UlskkmLAWqfiS3e3.jpg') center/cover no-repeat ;
+    padding: 70px 70px;
+    border-radius: 100px;
+    color: #f9f8f8;
+    
+}
+#MLid{
+  
+    font-size: 30px;
+}
+#MLimg{
+    transform: translateX(45%);
+    max-width: 280%;
+}
+
+.workshop-image img {
+    width: 300%;
+    border-radius: 100px;
+}
+
+/* Alternate layouts for images */
+.workshop-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+ #H2id{
+    color: #000000
+    
+ }
+ 
+ /* Hero Section */
+ .hero .hero-image img {
+    width: 100%;
+    max-width: 617px; /* Adjust based on your preference */
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    left: 20%;
+    transform: translateX(10%);
+    transform: translateY(-49%);
+}
+
+
+
+
+/* About Section */
+.about .row {
+    display: flex;
+    transition: cubic-bezier(0.19, 0.76, 0.74, 0.63);
+    /* flex-direction: row-reverse;  Image on left, text on right */
+    align-items: center;
+}
+.about-content{
+    
+    margin-top: 15%;
+    background: linear-gradient(to right, rgba(172, 102, 109, 0.9),  rgba(218, 81, 150, 0.9)), url('imagesTrns/photoimg\ \(1\).jpeg') center/cover no-repeat ; 
+    padding: 70px 70px;
+    border-radius: 50px;
+    /* display: inline; */
+    
+}
+.about-img, .about-content{
+    
+    opacity: 0; 
+    transition: all 1s cubic-bezier(0.46, 0.88, 0.97, 0.95);
+    
+}
+.about-img{
+    margin-top:7% ;
+    transform: translateX(16%);
+}
+/* Content animation: Bottom to Top */
+.about-content {
+    transform: translateY(20%);
+    /* transform: translateX(50%) */
+    
+    
+    
+}
+
+
+/* Active class when in view */
+.about :hover .about-img {
+    transform: translateX(6%);
+    opacity: 1;
+    
+}
+
+.about :hover .about-content {
+    transform: translateY(0%);
+    /* transform: translateX(-10%); */
+    opacity: 1;
+    
+}
+
+ 
+
+/* Internship Section */
+.Internship {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 15px; /* Add padding to ensure spacing */
+}
+
+.Internship .row {
+    display:run-in;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    border-radius: 70px;
+
+}
+
+
+.internship-img img {
+    width: 200%; /* Ensures the image takes the full width */
+    max-width: 750px; /* Adjust as needed */
+    height: auto;
+    transform: translateX(-15%);
+    border-radius: 50px;
+}
+.internBack{
+    background: linear-gradient( rgba(255, 38, 88, 0.773), rgba(239, 91, 37, 0.893)),url('imagesTrns/Internship\ backimg.jpg') center/cover no-repeat;
+    padding: 150px 150px;
+    /* height: 200%; */
+    border-radius: 70px;
+   
+}
+
+
+
+
+.internship-content {
+    width: 100%;
+    color: #ffffff;
+    max-width: 600px;
+    text-align: left;
+    padding: 10px 5px;
+    border-radius: 20px;
+    transform: translateY(5%);
+    font-size: 20px;
+}
+.internContent{
+    text-shadow: 5px 2px 15px black;
+    transform: translateX(25%);
+    padding-right: 50px ;
+
+}
+#internpara{
+    
+    transform: translateY(-159%);
+    
+}
+.Interndivpara{
+
+    transform: translateX(-60%);
+}
+.internpara{
+    text-align-last:center ;
+    width: 200%;
+
+}
+
+.InternH1{
+    
+    transform: translateX(-40%);
+    
+}
+#IDinternh1{
+    transform: translateY(-170%);
+    font-family:system-ui;
+    color: #ffffff;
+    font-size: 65px;
+    
+}
+#H4id{
+    color: #fafafa;
+    font-size: 180%;
+}
+
+#Interimg{
+    
+    transform: translateY(25%);
+
+}
+.Projects{
+    background: linear-gradient( rgba(163, 4, 249, 0.9),  rgba(38, 195, 252, 0)) ;
+    border-radius: 10%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+    
+}
+.Projects.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#Project1id,#Project2id{
+    padding: 30px 30px;  
+    color: #ffffff;
+
+   
+}
+#projects{
+    margin-top: -10%;
+    padding: 70px;
+}
+#Project1id{
+    font-size: 20px;
+    transform: translateY(0%);
+    background-color: rgb(161, 62, 254);
+    border-radius: 70px;
+    
+}
+#Project2id{
+    margin-top: 10%;
+    /* transform: translateY(-10px); */
+    background-color: rgb(161, 62, 254);
+    border-radius: 70px;
+    
+}
+#Project2Con{
+    
+    border-radius: 100px;
+    margin-top: -10%;
+    padding: 70px;
+    font-size: 20px;
+
+}
+.ProjectHead{
+    color: #ffffff;
+    margin-top: 5%;
+}
+.ActualProjectH1{
+    /* font-size: 70px; */
+    color: #ffffff;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 10px;
+    font-size: 400%;
+    transform: translateY(-60px);
+}
+#h5Project{
+    transform: translateY(-30%);
+    margin-top: 0%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    font-family:'Montserrat';
+}
+#ProjectH1{
+    color: #ffffff;
+    /* margin-top: -5%; */
+    margin-bottom: 4%;
+    padding: 10px 10px;
+    font-size: 40px;
+    transform: translateY(-10%);
+    transform: translateX(20%);
+}
+#Project2H1{
+    color: #ffffff; 
+    margin-top: 0%;
+    margin-bottom: 4%;
+    padding: 10px 10px;
+    font-size: 40px;
+    transform: translateY(-10PX);
+    transform: translateX(20%);
+}
+.FadeUpProject{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    
+}
+.FadeUpProject.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+.MySkills{
+    background: linear-gradient(rgb(239, 129, 25),rgba(255, 247, 0, 0));
+    border-radius: 150px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 100px 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+.MySkills.show{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+#HeadSkill{
+    color: #ffffff;
+    padding: 20px;
+    transform: translateY(-40%);
+    
+    
+}
+#idMyskillh1{
+    transform: translateX(-4%);
+    font-size: 50px;
+}
+#idH6{
+    font-family:'Montserrat';
+    transform: translateX(-4%);
+    
+}
+.H6Class{
+    transform: translatey(40%);
+
+}
+.liclass:hover{
+    font-size: 15px;
+    
+}
+.Skill-container{
+    transform: translateX(3%);
+    
+}
+.front-end-Skill{
+    color: #ffffff;
+    background-color: rgb(255, 86, 13);
+    width: 80%;
+    padding: 60px 50px;
+    border-radius: 50px;
+
+}
+
+.front-end-Skill:hover{
+    color:rgb(255, 86, 13);
+    background:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    width: 80%;
+    padding: 60px 50px;
+    border-radius: 50px;
+    /* text-shadow: 2px 2px 10px rgb(118, 118, 118); */
+
+}
+.Back-end-Skill{
+    color: #ffffff;
+    background-color: rgb(255, 86, 13);
+    width: 80%;
+    padding: 60px 50px;
+    border-radius: 50px;
+
+}
+.Back-end-Skill:hover{
+    color:rgb(255, 86, 13);
+    background:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    width: 80%;
+    padding: 60px 50px;
+    border-radius: 50px;
+    /* text-shadow: 2px 2px 20px rgb(122, 122, 122); */
+    
+}
+.Tools-Skill:hover{
+    color:rgb(255, 86, 13);
+    background:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    width: 80%;
+    padding: 60px 50px;
+    border-radius: 50px;
+    /* text-shadow: 2px 2px 20px rgb(144, 142, 142); */
+
+}
+.Tools-Skill{
+    color: #ffffff;
+    background-color: rgb(255, 86, 13);
+    width: 80%;
+    padding: 60px 50px;
+    border-radius: 50px;
+
+}
+
+#Contectitems{
+    width: 80%;
+}
+#ContactBack{
+    background: linear-gradient(to right,rgb(138, 198, 250),rgb(248, 131, 131)),url('imagesTrns/1719462979894.png') right/cover no-repeat;
+    border-radius: 100px;
+    padding: 100px 40px;
+
+}
+.End-container{
+    padding: 70px;
+    font-size:13px;
+    transform: translateX(-10%);
+    margin-bottom: 0%;
+    margin-top: 4%;
+
+    /* transform: translateY(20%); */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero .hero-image img {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+    .about .row,
+    .Internship .row {
+        flex-direction: column; /* Stack elements for mobile view */
+        text-align: center;
+        
+        
+    }
+}
+@media (max-width:768px){
+    .Workservice .MLdiv,#MLimg
+    {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+    .Agilediv,#Agileimg{
+        position: static;
+        transform: none;
+        width: 100%;
+        
+    }
+}
+@media (max-width:768px){
+ #IDinternh1
+    {
+        transform: translateY(700px);
+        transform: translateX(-90px);
+        width: 300%;
+    }
+}
+
+
+ 
+ a:hover {
+     color: #EF233C;
+ }
+ 
+ .btn {
+     padding: 12px 25px;
+     font-size: 14px;
+     font-weight: 600;
+     color: #ffffff;
+     background: #EF233C;
+     border: 1px solid rgb(239, 35, 60);
+     border-radius: 4px;
+     transition: background 0.3s;
+ }
+ 
+ .btn:hover {
+     background: #ffffff;
+     color: #EF233C;
+     border: 1px solid rgb(239, 35, 60);
+ }
+ 
+ section {
+     padding: 40px 20px;
+     text-align: center;
+ }
+ 
+ #home {
+     background: linear-gradient(to left, rgba(238, 14, 36, 0.9),  rgba(234, 11, 93, 0.9)), url('imagesTrns/1719462979894.png') center/65% 150% no-repeat ;
+     color: #ffffff;
+     padding: 300px 30px;
+ }
+ 
+ #home h1 {
+     font-size: 48px;
+     font-weight: bold;
+ }
+ 
+ #about, #skills, #Internship, #education {
+     background: #f9f9f9;
+     /* border-top: 3px solid #EF233C; */
+     margin-bottom: 20px;
+ }
+ #Image2.o{
+    width: 200%;
+    height: 150%;
+    border-radius:20px ;
+ }
+ 
+ ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ 
+ ul li {
+     padding: 8px 0;
+     font-size: 16px;
+ }
+ 
+ #contact a {
+     color: #EF233C;
+ }
+ 
+ #contact a:hover {
+     text-decoration: underline;
+ }
+ 
+ @media (max-width: 768px) {
+     h1 {
+         font-size: 36px;
+     }
+     .btn {
+         padding: 10px 20px;
+     }
+     section {
+         padding: 20px 10px;
+     }
+ }
+ @keyframes Ani {
+    0%{
+        content: "Fresher looking for job as a";
+    }
+     40%{
+         content: "Software Enginieer";
+        }
+        80%{
+        content: "FullStake Developer";
+    }
+    120%{
+        content: "Software Developer";
+    }
+    160%{
+        content: "Java Developer";
+    }
+    
+}
+#Ani::after{
+   display: inline-block;
+   content: "Fresher";
+   animation: Ani 5s infinite ;
+   animation-delay: 1s; 
+}
+
