@@ -201,23 +201,29 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                         <div id="Interimg" class="internship-img">
-                            <img  src="imagesTrns/SwapImage1.jpg" alt="Internship Image">
+                            <img   src="imagesTrns/SwapImage1.jpg" alt="Internship Image">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="internship-content">
                             <div class="InternH1">
-                                <h1 id="IDinternh1">INTERNSHIP</h1>
+                                <div class="Inter-alignitemscenter">
+                                    
+                                    <h1 id="IDinternh1" class="Idinterh1">INTERNSHIP</h1>
+                                </div>
                                 <div class="Interndivpara">                                 
                                     <p id="internpara" class="internpara">Participated in a six-month internship to understand the workings of the IT industry, enhance my technical skills, and gain real-world experience in software development.</p>
                                 </div>
                             </div>
+                            <div class="BackIntern">
                             <div class="internContent">
-                                <h4 id="H4id">Java Developer Intern</h4>
-                                <p>Penta Software Solution at Tiruchengode, Namakkal.</p>
-                                <p>Gained hands-on experience in Java programming, focusing on object-oriented concepts, exception handling, and collection frameworks.</p>
-                                <p>Contributed to real-world application development using Java frameworks and tools.</p>
-                                <p>Developed scalable and efficient software solutions in a collaborative environment.</p>
+                                    <h4 id="H4id">Java Developer Intern</h4>
+                                    <p id="internparaid">Penta Software Solution at Tiruchengode, Namakkal.</p>
+                                    <p id="internparaid">Gained hands-on experience in Java programming, focusing on object-oriented concepts, exception handling, and collection frameworks.</p>
+                                    <p id="internparaid">Contributed to real-world application development using Java frameworks and tools.</p>
+                                    <p id="internparaid">Developed scalable and efficient software solutions in a collaborative environment.</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -373,46 +379,44 @@
         
       
         <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-                <div class="container" id="ContactBack">
-                    <div class="row align-items-center" id="Contectitems">
-                        
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <h1>Contect Me</h1>
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
+        <div class="row align-items-center" id="Contectitems">
+            <!-- Contact Form -->
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form method="post" action="https://formspree.io/f/xwpleqdw" name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <h1 id="Contact-h1id">Contact Me</h1>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="required" />
+                        </div><br>
+                        <div class="control-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="required" />
+                        </div><br>
+                        <div class="control-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="required" />
+                        </div><br>
+                        <div class="control-group">
+                            <textarea class="form-control" name="message" id="message" placeholder="Message" required="required"></textarea>
+                        </div><br>
+                        <div>
+                            <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
                         </div>
-                    </div>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Contact Image (Moved Here) -->
+            <div class="col-md-4 d-none d-md-block">
+                <div id="Contactimg" class="contact-image">
+                    <img src="imagesTrns/contact_img-removebg-preview.png" alt="Contact Image">
                 </div>
             </div>
         </div>
+        
         <!-- Contact End -->
-
-
-      
+        
+        
+        
         <!-- Footer Start -->
         <div class="footer wow fadeIn" data-wow-delay="0.3s">
             <div class="End-container">
@@ -434,26 +438,22 @@
                     </div>
                 </div>
                 <div class="container copyright">
-                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | 
+                    <p>&copy; <a href="#">My Personal-Portfolio</a>, All Right Reserved | 
 					
 					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                    Designed By <a href="https://www.linkedin.com/in/muhammadu-haarish-53a711267/">SMHaarish</a></p>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        
-        
+
+    
         <!-- Pre Loader -->
         <div id="loader" class="show">
             <div class="loader"></div>
         </div>
 
         
-        <!-- JavaScript Libraries -->
  
     </body>
 </html>
