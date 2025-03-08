@@ -55,7 +55,36 @@ document.addEventListener("DOMContentLoaded", function() {
           window.addEventListener("scroll", revealOnScroll);
           revealOnScroll(); // Run once to check initial position
      });
-
-
-
-
+     
+     // Internship Content fade in 
+     document.addEventListener("DOMContentLoaded", function() {
+      const worElements = document.querySelectorAll(".internContent");
+      
+      function revealOnScroll() {
+           worElements.forEach((element) => {
+                if (element.getBoundingClientRect().top < window.innerHeight - 100) {
+                     element.classList.add("show");
+                    }
+               });
+          }
+          
+          window.addEventListener("scroll", revealOnScroll);
+          revealOnScroll(); // Run once to check initial position
+     });
+     
+     // Internship Heading fade in 
+     
+     document.addEventListener("DOMContentLoaded", function() {
+      const worElements = document.querySelectorAll(".InternH1");
+      
+      function revealOnScroll() {
+           worElements.forEach((element) => {
+                if (element.getBoundingClientRect().top < window.innerHeight - 100) {
+                     element.classList.add("show");
+                    }
+               });
+          }
+          
+          window.addEventListener("scroll", revealOnScroll);
+          revealOnScroll(); // Run once to check initial position
+     });
