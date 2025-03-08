@@ -28,7 +28,7 @@ body {
 
 
  .Workservice{
-    background:linear-gradient(rgb(255, 104, 54),rgb(254, 193, 80) );
+    background:linear-gradient(rgb(255, 191, 0),rgba(254, 193, 80, 0) );
     margin-top: 100px;
     margin-bottom: 0px;
     padding: 10px 10px;
@@ -198,6 +198,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 200px 15px; /* Add padding to ensure spacing */
+    margin-top: 0%;
 }
 
 .Internship .row {
@@ -218,15 +219,12 @@ body {
     border-radius: 50px;
 }
 .internBack{
-    background: linear-gradient( rgba(255, 38, 88, 0.773), rgba(239, 91, 37, 0.893)),url('imagesTrns/Internship\ backimg.jpg') center/cover no-repeat;
+    background: linear-gradient( rgb(0, 166, 255), rgba(255, 255, 255, 0));
     padding: 150px 150px;
     /* height: 200%; */
     border-radius: 70px;
    
 }
-
-
-
 
 .internship-content {
     width: 100%;
@@ -235,13 +233,35 @@ body {
     text-align: left;
     padding: 10px 5px;
     border-radius: 20px;
-    transform: translateY(5%);
+    transform: translateY(4%);
     font-size: 20px;
 }
 .internContent{
-    text-shadow: 5px 2px 15px black;
+    padding-right: 70px ;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+    
+}
+.internContent.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+#H4id, #internparaid{
+    transform: translateX(10%);
+
+}
+    
+
+#internparaid{
+    font-size: 18px;
+}
+.BackIntern{
+    background-color: rgb(0, 128, 255);
+    border-radius: 70px;
+    padding: 50px 10px;
     transform: translateX(25%);
-    padding-right: 50px ;
+    
 
 }
 #internpara{
@@ -251,24 +271,35 @@ body {
 }
 .Interndivpara{
 
-    transform: translateX(-60%);
+    transform: translateX(-95%);
 }
 .internpara{
     text-align-last:center ;
     width: 200%;
 
 }
+.Inter-alignitemscenter{
+
+    transform: translateY(-110px);
+}
 
 .InternH1{
     
-    transform: translateX(-40%);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
     
 }
+.InternH1.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #IDinternh1{
-    transform: translateY(-170%);
-    font-family:system-ui;
+    font-family:'Montserrat';
     color: #ffffff;
     font-size: 65px;
+    transform: translateX(-200px);
     
 }
 #H4id{
@@ -281,6 +312,44 @@ body {
     transform: translateY(25%);
 
 }
+@media (max-width: 768px) {
+    .Internship .row {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .internship-img img {
+        width: 100%;
+        max-width: 350px; /* Adjust image size */
+        transform:initial; /* Remove any offset */
+        margin: 20px auto; /* Center the image */
+    }
+
+    .internship-content {
+        width: 100%;
+        text-align: center;
+        transform:initial; /* Reset transformation */
+        padding: 20px;
+    }
+
+    .InternH1 {
+        transform:inherit;
+        font-size: 40px; /* Adjust size for smaller screens */
+    }
+
+    .BackIntern {
+        transform:initial;
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #IDinternh1 {
+        transform: none;
+        font-size: 35px; /* Adjust heading size */
+    }
+}
+
 .Projects{
     background: linear-gradient( rgba(163, 4, 249, 0.9),  rgba(38, 195, 252, 0)) ;
     border-radius: 10%;
@@ -309,7 +378,6 @@ body {
     transform: translateY(0%);
     background-color: rgb(161, 62, 254);
     border-radius: 70px;
-    
 }
 #Project2id{
     margin-top: 10%;
@@ -476,13 +544,49 @@ body {
 }
 
 #Contectitems{
+    width: 70%;
+    background: linear-gradient(to right,rgb(138, 198, 250),rgb(248, 131, 131));
+    padding: 50px 30px;
+    border-radius: 50px;
+    transform: translateX(23%);
+}
+.contact-form{
     width: 80%;
 }
+#Contact-h1id{
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #ffffff;
+
+}
 #ContactBack{
-    background: linear-gradient(to right,rgb(138, 198, 250),rgb(248, 131, 131)),url('imagesTrns/1719462979894.png') right/cover no-repeat;
     border-radius: 100px;
     padding: 100px 40px;
 
+}
+#Contactimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none; /* Reset any existing transform */
+}
+
+.contact-image img {
+    max-width: 200%;
+    height: auto;
+    display: block;
+    margin-left: auto; /* Align image to the right */
+    transform: translateX(-15%);
+}
+@media (max-width: 768px) {
+    .row.align-items-center {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-image img {
+        margin: 20px auto;
+        max-width: 80%;
+    }
 }
 .End-container{
     padding: 70px;
@@ -526,6 +630,15 @@ body {
     }
 }
 @media (max-width:768px){
+    .Internship .BackIntern
+    {
+        position:relative;
+        transform: none;
+        width: 400%;
+    }
+  
+}
+@media (max-width:768px){
  #IDinternh1
     {
         transform: translateY(700px);
@@ -533,6 +646,7 @@ body {
         width: 300%;
     }
 }
+
 
 
  
@@ -550,6 +664,7 @@ body {
      border-radius: 4px;
      transition: background 0.3s;
  }
+
  
  .btn:hover {
      background: #ffffff;
