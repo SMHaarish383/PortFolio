@@ -206,7 +206,11 @@ body {
     
     
 }
-
+@media (max-width: 768px){
+    .about-img{
+        margin-left: -40%;
+    }
+}
 
 
  
