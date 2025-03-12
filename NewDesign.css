@@ -214,7 +214,7 @@ body {
 /* Internship Section */
 .InternshipBack{
     margin-top: 10%;
-    background: linear-gradient(rgb(2, 255, 150),#fefefe);
+    background: linear-gradient(rgb(250, 1, 88),#ffffff);
     border-radius: 100px;
     opacity: 0;
     transform: translateY(30px);
@@ -278,7 +278,7 @@ body {
 
 }
 .backpad{
-    background-color: rgb(2, 255, 82);
+    background-color: rgb(255, 46, 77);
     padding: 86px 40px;
     margin-top:6%;
     margin-bottom: 10%;
@@ -351,6 +351,9 @@ body {
         margin-left: -70%;
     }
 }
+
+
+
 /* Project Section */
 
 .Projects{
@@ -448,9 +451,49 @@ body {
     transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+    .Projects {
+        text-align: center;
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    .container.banner-text {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #Project1id, #Project2id {
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    #ProjectH1, #Project2H1 {
+        font-size: 30px;
+        text-align: center;
+        transform: none;
+    }
+
+    #h5Project {
+        margin-top: 30%;
+        font-size: 17px;
+        text-align: center;
+        padding: 10px 10px;
+        width: 150%;
+        margin-left:-20%;
+    }
+ 
+    .ActualProjectH1{
+        font-size: 50px;
+        margin-right: 13%;
+    }
+}
 
 
 
+
+/* Skill section */
 .MySkills{
     background: linear-gradient(rgb(239, 129, 25),rgba(255, 247, 0, 0));
     border-radius: 150px;
@@ -474,11 +517,29 @@ body {
     
     
 }
-@media screen {
+@media(max-width: 768px)  {
     
     #idMyskillh1{
-        transform: translateX(-4%);
+        margin-top: 200%;
         font-size: 50px;
+    }
+    .H6Class{
+        margin-top: -30%;
+        margin-left: -40%;
+        width: 300px;
+    }
+    .front-end-Skill{
+        margin-top: -70%;
+        text-align: center;
+        padding: 30px 30px;
+    }
+    #front-end-head{
+        font-size: 20px;
+        margin-left: -60%;
+    }
+    #Back-end-head{
+        font-size: 20px;
+        margin-left: -60%;
     }
 }
 #idH6{
