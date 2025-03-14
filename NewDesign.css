@@ -777,13 +777,15 @@ body {
 }
 /* Footer Section */
 @media (max-width: 768px){
-    .footer-name-location{
+ .footer-name-location{
         margin-left: 0%;
         color: #ffffff;
     }
-    #footer-name, #footer-location{
+    #footer-name{
         font-size: 12px;
-        display: inline-flex;
+    }
+    #footer-location{
+        font-size: 12px;
     }
     .footer-social{
         margin-left: 12%;
