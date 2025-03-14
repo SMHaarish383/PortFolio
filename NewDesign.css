@@ -781,10 +781,10 @@ body {
         margin-left: 0%;
         color: #ffffff;
     }
-    #footer-name{
+    .footer-name{
         font-size: 12px;
     }
-    #footer-location{
+    .footer-location{
         font-size: 12px;
     }
     .footer-social{
@@ -885,7 +885,7 @@ body {
     }
  }
  
- #about, #skills, #Internship, #education {
+ #about, #skills, #Internship,{
      background: #f9f9f9;
      /* border-top: 3px solid #EF233C; */
      margin-bottom: 20px;
