@@ -240,7 +240,7 @@ body {
 /* college Section */
 
 .Education-section{
-    background: linear-gradient(rgb(174, 97, 45),  rgba(121, 125, 15, 0.351)), url('imagesTrns/college-real-img-removebg-preview.png') center/cover no-repeat ;
+    background: linear-gradient(rgb(174, 97, 45),  rgba(121, 125, 15, 0.351)), url('imagesTrns/college-real-img.jpg') center/cover no-repeat ;
     position: relative;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
