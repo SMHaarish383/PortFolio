@@ -237,7 +237,6 @@ body {
     }
 }
 
-/* college Section */
 
 .Education-section{
     background: linear-gradient(rgb(174, 97, 45),  rgba(121, 125, 15, 0.351)), url('imagesTrns/college-real-img.jpg') center/cover no-repeat ;
@@ -246,7 +245,7 @@ body {
     border-top-right-radius: 50px;
     margin-top: 7%;
     padding: 100px 20px;
-    color: white; /* Ensures text is readable */
+    color: white; 
     text-align: center;
     opacity: 0;
     transform: translateY(30px);
@@ -323,13 +322,10 @@ body {
     
 }
 
-
- 
-
 /* Internship Section */
 .InternshipBack{
     margin-top: 10%;
-    background: linear-gradient(#00b3ff,#ffffff00);
+    background: linear-gradient(#00b3ff,#ffffff00),url('imagesTrns/internship-img2.jpg') center/cover no-repeat;
     border-radius: 100px;
     opacity: 0;
     transform: translateY(30px);
@@ -472,7 +468,7 @@ body {
 /* Project Section */
 
 .Projects{
-    background: linear-gradient( rgba(163, 4, 249, 0.9),  rgba(38, 195, 252, 0)) ;
+    background: linear-gradient( rgba(163, 4, 249, 0.9),  rgba(38, 195, 252, 0)),url('imagesTrns/project-img8.jpg') center/cover no-repeat;
     margin-top: 15%;
     border-radius: 100px;
     opacity: 0;
@@ -498,14 +494,14 @@ body {
 #Project1id{
     font-size: 20px;
     transform: translateY(0%);
-    background-color: rgb(161, 62, 254);
+    background-color: rgb(130, 45, 209);
     border-radius: 70px;
     text-align:initial;
 }
 #Project2id{
     margin-top: 10%;
     /* transform: translateY(-10px); */
-    background-color: rgb(161, 62, 254);
+    background-color: rgb(130, 45, 209);
     border-radius: 70px;
     
 }
@@ -619,7 +615,7 @@ body {
 
 /* Skill section */
 .MySkills{
-    background: linear-gradient(rgb(239, 129, 25),rgba(255, 247, 0, 0));
+    background: linear-gradient(rgb(239, 129, 25),rgba(255, 247, 0, 0)),url('imagesTrns/Skills-img2.jpg') center/cover no-repeat;
     border-radius: 50px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -725,7 +721,7 @@ body {
 
 .front-end-Skill:hover{
     color:rgb(255, 86, 13);
-    background:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    background:linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
     width: 80%;
     padding: 60px 50px;
     border-radius: 50px;
@@ -743,7 +739,7 @@ body {
 }
 .Back-end-Skill:hover{
     color:rgb(255, 86, 13);
-    background:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    background:linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
     width: 80%;
     padding: 60px 50px;
     border-radius: 50px;
@@ -752,7 +748,7 @@ body {
 }
 .Tools-Skill:hover{
     color:rgb(255, 86, 13);
-    background:linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    background:linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
     width: 80%;
     padding: 60px 50px;
     border-radius: 50px;
