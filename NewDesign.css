@@ -719,14 +719,6 @@ body {
     padding: 60px 50px;
     border-radius: 50px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 2s ease-in-out;
-    
-}
-.front-end-Skill.show{
-    opacity: 1;
-    transform: translateY(0px);
 
 }
 
@@ -749,14 +741,6 @@ body {
     padding: 60px 50px;
     border-radius: 50px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 2.5s ease-in-out;
-    
-}
-.Back-end-Skill.show{
-    opacity: 1;
-    transform: translateY(0px);
 
 }
 
@@ -786,15 +770,6 @@ body {
     padding: 60px 50px;
     border-radius: 50px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 2s ease-in-out;
-    
-}
-.Tools-Skill.show{
-    opacity: 1;
-    transform: translateY(0px);
-
 }
 
 
