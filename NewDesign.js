@@ -22,41 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
      }
      window.addEventListener('scroll', revealProject);
  });
-//  front-end-skill
-
-document.addEventListener("DOMContentLoaded", function() {
-     const projectSection = document.querySelector('.front-end-Skill');
- 
-     function revealProject() {
-         if (window.scrollY > projectSection.offsetTop - window.innerHeight + 100) {
-             projectSection.classList.add('show');
-         }
-     }
-     window.addEventListener('scroll', revealProject);
- });
-
-//  Back-end-skill
-document.addEventListener("DOMContentLoaded", function() {
-     const projectSection = document.querySelector('.Back-end-Skill');
- 
-     function revealProject() {
-         if (window.scrollY > projectSection.offsetTop - window.innerHeight + 100) {
-             projectSection.classList.add('show');
-         }
-     }
-     window.addEventListener('scroll', revealProject);
- });
-
-//  Tools-skill
-document.addEventListener("DOMContentLoaded", function() {
-     const projectSection = document.querySelector('.Tools-Skill');
-     function revealProject() {
-         if (window.scrollY > projectSection.offsetTop - window.innerHeight + 100) {
-             projectSection.classList.add('show');
-         }
-     }
-     window.addEventListener('scroll', revealProject);
- });
  
  //animation for WorkShop Section
  document.addEventListener("DOMContentLoaded", function() {
