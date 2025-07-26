@@ -13,7 +13,6 @@ Interactive Sections – About, Skills, Projects, Workshops, and Contact Form wi
 Front-end: HTML, CSS, JavaScript
 Styling & Animations: CSS3, JavaScript, Custom Animations
 Version Control: Git & GitHub
-🔗 Live Demo: [Add Your Portfolio Link Here]
-📌 GitHub Repository: [Your Repository Link]
 
-Would you like me to include any additional details or technologies? 🚀
+
+
